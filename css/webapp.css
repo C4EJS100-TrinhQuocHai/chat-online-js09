@@ -1,0 +1,80 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  .chat-container {
+      height: 100vh;
+  }
+  .chat-container .header {
+      background-color: #037789;
+      text-align: center;
+      height: 64px;
+      color: #fff;
+      line-height: 64px;
+  }
+  .conversation-detail .tittle {
+      height: 64px;
+      text-align: center;
+      line-height: 64px;
+      border-bottom: 1px solid #dbdbdb;
+  }
+  .main {
+      height: calc(100vh - 64px);
+      width: 100%;
+  }
+  .main .conversation-detail {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  .conversation-detail .list-chat {
+      flex-grow: 1;
+      overflow: auto;
+  }
+  .conversation-detail .list-chat .me {
+      display: flex;
+      align-items: flex-end;
+      color: #fff;
+      flex-direction: column;
+  }
+  .conversation-detail .list-chat .me .content {
+      max-width: 45%;
+      width: max-content;
+      background-color: #037789;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px 0px;
+      word-break: break-all;
+
+  }
+  .conversation-detail .list-chat .owner .content {
+      display: flex;
+      max-width: 45%;
+      width: max-content;
+      text-align: justify;
+      background-color: #dbdbdb;
+      border-radius: 5px;
+      padding: 5px;
+      word-break: break-all;
+      margin-top: 10px;
+  }
+  .input-chat {
+      max-width: 100%;
+      box-sizing: border-box;
+  }
+  .input-chat input {
+      width: 99%;
+      height: 50px;
+      position: relative;
+      margin-bottom: 10px;
+      outline: none;
+  }
+  .send {
+      position: absolute;
+      right: 30px;
+      bottom: 22px;
+      font-size: x-large;
+      border: none;
+      color: blue;
+  }
